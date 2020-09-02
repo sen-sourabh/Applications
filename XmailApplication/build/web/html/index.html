@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Xmail</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/xmail_title_photo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <style>
+            .main_body {
+                position: absolute;
+                float: left;
+                width: 100%;
+                height: 100%;
+                background: url('./images/background_image_3.jpg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            .try-btn {
+                background-color: transparent;
+                color: #e85600;
+                border: 1px solid #e85600;
+                font-weight: bold;
+                font-size: 1.2vw;
+            }
+            .try-btn:hover {
+                background-color: #e85600;
+                color: white;
+            }
+            .main-headings {
+                margin-top: 16%;
+            }
+            .main-text-heading1 {
+                color: #e85600;
+                font-weight: bold;
+                font-size: -webkit-xxx-large;
+                padding-left: 30%;
+            }
+            .main-text-heading2 {
+                color: #e85600;
+                font-weight: 600;
+                font-size: large;
+                padding-left: 40%;
+            }
+            .hrline {
+                width: 30%;
+                border: 1px solid #e85600;
+            }
+            .form-vertical {
+                width: 30%;
+            }
+            .email {
+                border-right: 0px solid transparent;
+                float: left;
+                width: 70%;
+            }
+            .static_email {
+                border-left: 0px solid transparent;
+                width: 30%;
+            }
+            .form-control {
+                margin-bottom: 4%;
+                border: 1px solid #e85600;
+                background: transparent;
+            }
+            
+            .logo-navbar-brand {
+                padding-left: 92%;
+            }
+            @media only screen and (max-width: 600px) {
+                .main_body {
+                    float: left;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: url('./images/background_image_3.jpg');
+                    background-repeat: repeat;
+                    background-size: 100%;
+                }
+                .try-btn {
+                    background-color: transparent;
+                    color: #e85600;
+                    border: 1px solid #e85600;
+                    font-weight: bold;
+                    font-size: 3vw;
+                }
+                .try-btn:hover {
+                    background-color: #e85600;
+                    color: white;
+                }
+                .main-headings {
+                    margin-top: 15%;
+                }
+                .main-text-heading1 {
+                    color: #e85600;
+                    font-weight: 600;
+                    font-size: xx-large;
+                    padding-left: 2%;
+                }
+                .main-text-heading2 {
+                    color: #e85600;
+                    font-weight: 600;
+                    font-size: smaller;
+                    padding-left: 27%;
+                }
+                .hrline {
+                    width: 80%;
+                    border: 1px solid #e85600;
+                }
+                .form-vertical {
+                    width: 80%;
+                }
+                .email {
+                    border-right: 0px solid transparent;
+                    float: left;
+                    width: 65%;
+                }
+                .static_email {
+                    border-left: 0px solid transparent;
+                    width: 35%;
+                }
+                .form-control {
+                    margin-bottom: 4%;
+                    border: 1px solid #e85600;
+                    background: transparent;
+                }
+                
+                .logo-navbar-brand {
+                    padding-left: 72%;
+                }
+              }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+            <a class="navbar-brand" href="#" id="home_click"><img src="./images/xmail_photo_200x200.png"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+<!--                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>-->
+<!--                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>-->
+<!--                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>-->
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+<!--                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+                    <a class="btn btn-outline try-btn" id="signup_click" href="#">Don't have an account?</a>&emsp;
+                    <a class="btn btn-outline try-btn" id="signin_click" href="#">Sign In</a>
+                </form>
+            </div>
+        </nav>
+                
+<!-- HOME -->
+
+        <div id="home" class="main_body">
+            <div class="main-headings">
+                <div class="main-text-heading1">
+                    <p> One Xmail Account For All </p>
+                </div>
+                <div class="main-text-heading2">
+                    <p> Start Your Business With Xmail </p>
+                </div>
+            </div>
+        </div>
+
+
+<!-- SIGN UP -->        
+
+        <div id="signup" class="main_body">
+            <div class="main-signin-headings">
+                <center>
+                    <h1> Sign Up </h1>
+                    <hr class="hrline">
+                    <form class="form-vertical" method="POST" id="signup_form">
+                        <input class="form-control" id="name" type="text" name="name" placeholder="* Name" required="required"/>
+                        <input class="form-control email" id="emailid" type="text" name="emailid" placeholder="* Email" required="required"/><input class="form-control static_email" id="static_email" type="text" name="static_email" value="@xmail.com" disabled/>
+                        <input class="form-control" id="password" type="password" name="password" placeholder="* Password" required="required"/>
+                        <input class="form-control" id="cpassword" type="password" name="cpassword" placeholder="* Confirm Password" required="required"/>
+                        <input class="form-control" id="bod" type="date" name="bod" required="required"/>
+                        <select class="form-control" id="gender" name="gender">
+                            <option value=""> * Select Gender </option>
+                            <option value="male"> Male </option>
+                            <option value="female"> Female </option>
+                            <option value="other"> Other </option>
+                        </select>
+                        <input class="form-control" id="mobile" type="text" name="mobile" placeholder="* Mobile" required="required"/>
+                        <input class="btn btn-outline try-btn" id="sign_up" type="button" name="sign_up" value="Sign Up"/>
+                        <p style="color: green;" id="message_signup"> </p>
+                    </form>
+                </center>
+            </div>
+        </div>
+
+<!-- Sign In -->
+
+        <div id="signin" class="main_body">
+            <div class="main-signin-headings">
+                <center>
+                    <h1> Sign In </h1>
+                    <hr class="hrline">
+                    <form name="Signin_Form" class="form-vertical" method="POST" action="./jsp/signin.jsp" onsubmit="return validateForm()">
+                        <input id="signin_emailid" class="form-control email" type="text" name="signin_emailid" placeholder="Email"/><input id="signin_static_email" class="form-control static_email" type="text" name="signin_static_email" value="@xmail.com" readonly/>
+                        <input id="signin_password" class="form-control" type="password" name="signin_password" placeholder="Password"/>
+                        <input class="btn btn-outline try-btn" id="sign_in" type="submit" name="sign_in" value="Sign In"/>
+                        <p id="message_signin"> </p>
+                    </form>
+                    <a id="forget_password_click" href="#">Forget Email or Password?</a>
+                </center>
+            </div>
+        </div>
+
+<!-- Forget Password -->
+
+        <div id="forget_email" class="main_body">
+            <div class="main-signin-headings">
+                <center>
+                    <h1> Forget Email or Password </h1>
+                    <hr class="hrline">
+                    <form class="form-vertical" id="forget_email_form">
+                        <input class="form-control" id="mobileno_otp" type="text" name="mobile" placeholder="* Mobile" required="required"/>
+                        <input class="btn btn-outline try-btn" id="send_otp_email" type="button" name="send_otp" value="Send OTP"/>
+                        <p id="message_email_otp"> </p>
+                    </form>
+                </center>
+            </div>
+        </div>
+
+<!-- Enter OTP -->
+
+        <div id="enter_otp_form" class="main_body">
+            <div class="main-signin-headings">
+                <center>
+                    <h1> Enter OTP </h1>
+                    <hr class="hrline">
+                    <form class="form-vertical" id="enter_otp_form">
+                        <input class="form-control" type="text" id="otp" name="otp" placeholder="* OTP" required="required"/>
+                        <input class="form-control" type="hidden" id="set_otp" name="set_otp"/>
+                        <input class="form-control" type="hidden" id="mobile_set_otp" name="mobile_set_otp"/>
+                        <input class="btn btn-outline try-btn" id="enter_otp" type="button" name="enter_otp" value="Submit"/>
+                        <p id="message_enter_otp"> </p>
+                    </form>
+                </center>
+            </div>
+        </div>
+
+
+<!-- Footer -->
+
+        <div class="footer">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-bottom shadow-sm logo_footer">
+                <div class="logo-navbar-brand">
+                    <img src="./images/xmail_photo_200x200.png"/>
+                </div>
+            </nav>
+        </div>
+
+<!-- All Scripts for change page -->
+        <script>
+            $(document).ready(function(){
+                $('#home').show();
+                $('#signup').hide();
+                $('#signin').hide();
+                $('#forget_email').hide();
+                $('#enter_otp_form').hide();
+                $('#message').hide();
+            });
+            $('#signup_click').on('click', function() {
+                $('#home').hide();
+                $('#signup').show();
+                $('#signin').hide();
+                $('#forget_email').hide();
+                $('#enter_otp_form').hide();
+                $('#message').hide();
+            });
+            $('#signin_click').on('click', function() {
+                $('#home').hide();
+                $('#signup').hide();
+                $('#signin').show();
+                $('#forget_email').hide();
+                $('#enter_otp_form').hide();
+                $('#message').hide();
+            });
+            $('#home_click').on('click', function() {
+                $('#home').show();
+                $('#signup').hide();
+                $('#signin').hide();
+                $('#forget_email').hide();
+                $('#enter_otp_form').hide();
+                $('#message').hide();
+            });
+            $('#forget_password_click').on('click', function() {
+                $('#home').hide();
+                $('#signup').hide();
+                $('#signin').hide();
+                $('#forget_email').show();
+                $('#enter_otp_form').hide();
+                $('#message').hide();
+            });
+            $("#sign_up").on('click', function(event) {
+                event.preventDefault();
+                // disabled the submit button
+                $("#sign_up").prop("disabled", true);
+//                alert("here");
+                let name = document.getElementById("name").value;
+                let emailid = document.getElementById("emailid").value;
+                let static_email = document.getElementById("static_email").value;
+                let password = document.getElementById("password").value;
+                let cpassword = document.getElementById("cpassword").value;
+                let bod = document.getElementById("bod").value;
+                let gender = document.getElementById("gender").value;
+                let mobile = document.getElementById("mobile").value;
+                if(name === "" || emailid === "" || password === "" || cpassword === "" || bod === "" || gender === "" || mobile === "") {
+                    document.getElementById("message_signup").innerHTML = "* fields are required.";
+                    $("#sign_up").prop("disabled", false);
+                    return false;
+                }
+                if (password !== cpassword) { 
+                    document.getElementById("message_signup").innerHTML = "Password did not match, Please try again."; 
+                    $("#sign_up").prop("disabled", false);
+                    return false; 
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: './jsp/index.jsp',
+                    cache: false,
+                    data: {signup:1, name:name, emailid:emailid, static_email: static_email, password:password, cpassword:cpassword, bod:bod, gender:gender, mobile:mobile},
+                    success: function (data) {
+                        document.getElementById("message_signup").innerHTML = data;
+                        $("#sign_up").prop("disabled", false);
+                    },
+                    error: function (e) {
+                        document.getElementById("message_signup").innerHTML = e.responseText;
+                        $("#sign_up").prop("disabled", false);
+                    }
+                });
+                document.getElementById("name").value = "";
+                document.getElementById("emailid").value = "";
+                document.getElementById("password").value = "";
+                document.getElementById("cpassword").value = "";
+                document.getElementById("bod").value = "";
+                document.getElementById("gender").value = "";
+                document.getElementById("mobile").value = "";
+            });
+            $("#send_otp_email").on('click', function(event) {
+                event.preventDefault();
+                let mobile = document.getElementById("mobileno_otp").value;
+                let otp = generateOTP();
+                $("#send_otp_email").prop("disabled", true);
+                if(mobile === "") {
+                    document.getElementById("message_email_otp").innerHTML = "* field is required.";
+                    $("#send_otp_email").prop("disabled", false);
+                    return false;
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: './jsp/xmail_otp.jsp',
+                    cache: false,
+                    data: {send_otp:1, mobile:mobile, otp:otp},
+                    success: function (data) {
+                        if(data.localeCompare("success")) {
+                            $('#enter_otp_form').show();
+                            document.getElementById("set_otp").value= otp;
+                            document.getElementById("mobile_set_otp").value= mobile;
+                        } else {
+                            document.getElementById("message_email_otp").innerHTML = data;
+                        }
+                        $("#send_otp_email").prop("disabled", false);
+                    },
+                    error: function (e) {
+                        document.getElementById("message_email_otp").innerHTML = e.responseText;
+                        $("#send_otp_email").prop("disabled", false);
+                    }
+                });
+            });
+            $("#enter_otp").on('click', function(event) {
+                event.preventDefault();
+                let otp = document.getElementById("otp").value;
+                let set_otp = document.getElementById("set_otp").value;
+                let mobile_set_otp = document.getElementById("mobile_set_otp").value;
+                console.log("otp: "+otp);
+                console.log("set_otp: "+set_otp);
+                console.log("mobile_set_otp: "+mobile_set_otp);
+                $("#enter_otp").prop("disabled", true);
+                if(otp === "") {
+                    document.getElementById("message_enter_otp").innerHTML = "* field is required.";
+                    $("#enter_otp").prop("disabled", false);
+                    return false;
+                }
+                if(otp.localeCompare(set_otp)) {
+                    document.getElementById("message_enter_otp").innerHTML = "Entered OTP is invalid.";
+                    $("#enter_otp").prop("disabled", false);
+                    return false;
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: './jsp/xmail_check_otp.jsp',
+                    cache: false,
+                    data: {entered_otp:1, mobile_set_otp:mobile_set_otp},
+                    success: function (data) {
+                        if(data.localeCompare("success")) {
+                            document.getElementById("message_enter_otp").innerHTML = "You have got your xmail id and" + 
+                                    "password on registered mobile soon, Go for login.";
+                        } else {
+                            document.getElementById("message_enter_otp").innerHTML = data;
+                        }
+                        $("#enter_otp").prop("disabled", false);
+                    },
+                    error: function (e) {
+                        document.getElementById("message_enter_otp").innerHTML = e.responseText;
+                        $("#enter_otp").prop("disabled", false);
+                    }
+                });
+            });
+            
+            function generateOTP() { 
+                // Declare a digits variable  
+                // which stores all digits 
+                var digits = '0123456789'; 
+                let OTP = ''; 
+                for (let i = 0; i < 4; i++ ) { 
+                    OTP += digits[Math.floor(Math.random() * 10)]; 
+                } 
+                return OTP; 
+            }
+            
+//            $("#sign_in").on('click', function(event) {
+//                event.preventDefault();
+            function validateForm() {
+                let emailid = document.forms["Signin_Form"]["signin_emailid"].value;
+                let static_email = document.forms["Signin_Form"]["signin_static_email"].value;
+                let password = document.forms["Signin_Form"]["signin_password"].value;
+                if(emailid === "" || password === "") {
+                    document.getElementById("message_signin").innerHTML = "* fields are required.";
+                    return false;
+                } else {
+                    return true;
+                }s
+//                $.ajax({
+//                    type: 'POST',
+//                    url: './jsp/index.jsp',
+//                    cache: false,
+//                    data: {signin_check:1, emailid:emailid, static_email:static_email, password:password},
+//                    success: function (data) {
+//                        console.log(data);
+//                        if(data === true) {
+//                            return true;
+//                        } else {
+//                            document.getElementById("message_signin").innerHTML = data;
+//                            return false;
+//                        }
+//                    },
+//                    error: function (e) {
+//                        document.getElementById("message_signin").innerHTML = e.responseText;
+//                    }
+//                });
+            }
+        </script>
+    </body>
+</html>
